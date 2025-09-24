@@ -1,0 +1,21 @@
+# Esta é a configuração raiz, não procure por outras em diretórios superiores.
+root = true
+
+[*]
+# Estilo de indentação: use espaços em vez de tabs.
+indent_style = space
+
+# Tamanho da indentação: 2 espaços.
+indent_size = 2
+
+# Finais de linha: use line feed (LF), o padrão Unix.
+end_of_line = lf
+
+# Codificação de caracteres: UTF-8 é o padrão absoluto para a web.
+charset = utf-8
+
+# Remove quaisquer espaços em branco no final das linhas antes de salvar.
+trim_trailing_whitespace = true
+
+# Garante que todo arquivo termine com uma linha em branco.
+insert_final_newline = true
