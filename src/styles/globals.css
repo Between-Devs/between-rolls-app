@@ -1,8 +1,19 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@theme {
+  --color-dark-purple: #3a0a9c;
+  --color-midnight-blue: #1e1a2b;
+  --color-gray-thoughts: #2c2a33;
+  --color-white-fatima: #fafafa;
+
+  --font-mukta: var(--font-mukta);
+  --font-cinzel: var(--font-cinzel);
+  --font-cormorant: var(--font-cormorant);
 }
 
 @theme inline {
