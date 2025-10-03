@@ -10,6 +10,7 @@ import {
 } from './dialog';
 import { Button } from './button';
 import { Input } from './input';
+import { Label } from './label';
 
 const meta: Meta<typeof DialogContent> = {
   title: 'UI/Dialog',
@@ -47,9 +48,9 @@ export const Default: Story = {
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
-            <label htmlFor="name" className="text-right">
+            <Label htmlFor="name" className="text-right">
               Nome
-            </label>
+            </Label>
             <Input
               id="name"
               defaultValue="Pedro Duarte"
@@ -57,9 +58,9 @@ export const Default: Story = {
             />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
-            <label htmlFor="username" className="text-right">
+            <Label htmlFor="username" className="text-right">
               Usuário
-            </label>
+            </Label>
             <Input
               id="username"
               defaultValue="@peduarte"
