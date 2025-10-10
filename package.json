@@ -37,6 +37,7 @@
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@eslint/eslintrc": "3",
+    "@playwright/test": "^1.56.0",
     "@storybook/addon-a11y": "9.1.10",
     "@storybook/addon-docs": "9.1.10",
     "@storybook/addon-onboarding": "9.1.10",
