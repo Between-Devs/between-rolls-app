@@ -1,5 +1,5 @@
 // For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
-import storybook from "eslint-plugin-storybook";
+import storybook from 'eslint-plugin-storybook';
 
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -15,18 +15,23 @@ const compat = new FlatCompat({
   recommendedConfig: js.configs.recommended,
 });
 
-const eslintConfig = [...compat.extends(
-  'eslint:recommended',
-  'next/core-web-vitals',
-  'next/typescript',
-), {
-  ignores: [
-    'node_modules/**',
-    '.next/**',
-    'out/**',
-    'build/**',
-    'next-env.d.ts',
-  ],
-}, prettierConfig, ...storybook.configs["flat/recommended"]];
+const eslintConfig = [
+  ...compat.extends(
+    'eslint:recommended',
+    'next/core-web-vitals',
+    'next/typescript',
+  ),
+  {
+    ignores: [
+      'node_modules/**',
+      '.next/**',
+      'out/**',
+      'build/**',
+      'next-env.d.ts',
+    ],
+  },
+  prettierConfig,
+  ...storybook.configs['flat/recommended'],
+];
 
 export default eslintConfig;
